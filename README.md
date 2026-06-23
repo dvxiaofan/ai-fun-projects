@@ -17,7 +17,7 @@
 | `flappy-bird` | 像素风格飞翔小鸟 | ✅ 完成 |
 | `shooting` | 弹幕射击，带 boss 战 | ✅ 完成 |
 | `text-rpg` | AI 生成剧情的文字冒险 RPG | ✅ 完成 |
-| `minesweeper` | 经典扫雷 | ⏳ 待开发 |
+| `minesweeper` | 经典扫雷 | ✅ 完成 |
 
 ### 创意工具
 

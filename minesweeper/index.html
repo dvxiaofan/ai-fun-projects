@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>扫雷</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>扫雷</h1>
+    <div class="controls">
+      <button data-diff="easy" class="diff-btn active">初级 9×9</button>
+      <button data-diff="medium" class="diff-btn">中级 16×16</button>
+      <button data-diff="hard" class="diff-btn">高级 30×16</button>
+    </div>
+    <div class="status-bar">
+      <span>💣 <b id="mines">0</b></span>
+      <span id="face" class="face">🙂</span>
+      <span>⏱️ <b id="timer">0</b></span>
+    </div>
+    <div id="board" class="board"></div>
+    <p class="hint">左键揭开 · 右键标旗</p>
+  </div>
+  <script src="js/game.js"></script>
+</body>
+</html>
