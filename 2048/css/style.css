@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #faf8ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "SF Pro", "Helvetica Neue", Arial, sans-serif;
+  color: #776e65;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 420px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #776e65;
+}
+
+.scores {
+  display: flex;
+  gap: 8px;
+}
+
+.score-box {
+  background: #bbada0;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  min-width: 80px;
+}
+
+.score-box .label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.score-box .value {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.controls {
+  margin-bottom: 12px;
+}
+
+#new-game {
+  background: #8f7a66;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#new-game:hover {
+  background: #9f8b77;
+}
+
+.board-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  background: #bbada0;
+  padding: 12px;
+  border-radius: 8px;
+  width: 420px;
+  height: 420px;
+}
+
+.cell-bg {
+  background: rgba(238, 228, 218, 0.35);
+  border-radius: 6px;
+}
+
+.tile {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: top 0.12s ease, left 0.12s ease;
+  z-index: 1;
+}
+
+.tile.new {
+  animation: pop 0.2s ease;
+}
+
+.tile.merged {
+  animation: pop 0.2s ease;
+  z-index: 2;
+}
+
+@keyframes pop {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(238, 228, 218, 0.73);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay-content {
+  text-align: center;
+}
+
+#overlay-msg {
+  font-size: 32px;
+  font-weight: bold;
+  color: #776e65;
+  margin-bottom: 16px;
+}
+
+#retry-btn {
+  background: #8f7a66;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hint {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #aaa;
+}
