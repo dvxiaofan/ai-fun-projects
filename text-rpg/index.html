@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文字冒险</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="game-layout">
+      <div class="sidebar">
+        <h2>角色状态</h2>
+        <div class="stat"><span>生命</span><span id="hp">100/100</span></div>
+        <div class="stat"><span>攻击</span><span id="atk">10</span></div>
+        <div class="stat"><span>防御</span><span id="def">5</span></div>
+        <div class="stat"><span>金币</span><span id="gold">0</span></div>
+        <h2>背包</h2>
+        <div id="inventory" class="inventory">空</div>
+      </div>
+      <div class="main">
+        <h1>文字冒险</h1>
+        <div id="story" class="story"></div>
+        <div id="choices" class="choices"></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/game.js"></script>
+</body>
+</html>
