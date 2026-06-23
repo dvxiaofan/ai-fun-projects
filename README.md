@@ -15,7 +15,7 @@
 | `snake` | 经典贪吃蛇，支持 AI 自动对战 | ✅ 完成 |
 | `2048` | 数字合并游戏，支持 emoji / 3D 魔改版 | ✅ 完成 |
 | `flappy-bird` | 像素风格飞翔小鸟 | ✅ 完成 |
-| `shooting` | 弹幕射击，带 boss 战 | ⏳ 待开发 |
+| `shooting` | 弹幕射击，带 boss 战 | ✅ 完成 |
 | `text-rpg` | AI 生成剧情的文字冒险 RPG | ⏳ 待开发 |
 | `minesweeper` | 经典扫雷 | ⏳ 待开发 |
 

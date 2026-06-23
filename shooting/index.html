@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>弹幕射击</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>弹幕射击</h1>
+    <div class="hud">
+      <span>得分: <b id="score">0</b></span>
+      <span id="lives"></span>
+      <span>最高: <b id="high-score">0</b></span>
+    </div>
+    <canvas id="game" width="400" height="600"></canvas>
+    <div id="overlay" class="overlay">
+      <div class="overlay-content">
+        <p id="overlay-msg">按空格键开始</p>
+        <p class="hint">方向键/WASD 移动 · 空格/J 射击</p>
+      </div>
+    </div>
+  </div>
+  <script src="js/game.js"></script>
+</body>
+</html>
